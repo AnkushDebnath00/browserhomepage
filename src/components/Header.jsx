@@ -7,7 +7,7 @@ const Header = () => {
   // date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
   return (
     <>
-      <div>{date}</div>
+      <div className="font-rajdhani font-semibold text-xl">{date}</div>
       {/* <div>{time}</div> */}
       <div>Header</div>
     </>
