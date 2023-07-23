@@ -1,19 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Mina:wght@400;700&family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
 body {
   background-color: #121212;
   color: white;
   margin: 0;
-  padding: 10px;
-  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  padding: 0;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  @apply font-rajdhani;
-  @apply font-rajdhani;
 }

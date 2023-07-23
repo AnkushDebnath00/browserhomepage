@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         rajdhani: ["Rajdhani", "sans-serif"],
+        mina: ["Mina", "sans-serif"],
       },
     },
   },
