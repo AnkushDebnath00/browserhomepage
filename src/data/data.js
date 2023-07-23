@@ -3,6 +3,10 @@ const DATA = [
     name: "Casual",
     data: [
       {
+        url: "https://chat.openai.com/",
+        logo: "https://ariff.in/assets/tools/chatgpt.png",
+      },
+      {
         url: "https://searx.thegpm.org/",
         logo: "https://images.opencollective.com/searx/23b048b/logo/256.png",
       },
@@ -25,6 +29,14 @@ const DATA = [
       {
         url: "https://yt1s.com/en531",
         logo: "https://6mod.ru/uploads/posts/2021-05/1621003213_newpipe.png",
+      },
+      {
+        url: "https://simkl.com/",
+        logo: "https://res-1.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1397185652/7bb17600a403cc40bc925a0411d1b053.png",
+      },
+      {
+        url: "https://kayoanime.com/",
+        logo: "https://th.bing.com/th/id/OIP.I2JyGav03elGFJ9zTDkWTwAAAA?pid=ImgDet&rs=1",
       },
     ],
   },
@@ -54,6 +66,10 @@ const DATA = [
       {
         url: "https://www.facebook.com/",
         logo: "https://clipart.info/images/ccovers/1509135366facebook-symbol-png-logo.png",
+      },
+      {
+        url: "https://www.notion.so/",
+        logo: "https://cdn.icon-icons.com/icons2/2429/PNG/512/notion_logo_icon_147257.png",
       },
     ],
   },
@@ -95,10 +111,6 @@ const DATA = [
       {
         url: "https://www.canva.com/",
         logo: "https://logos-download.com/wp-content/uploads/2019/07/Canva_Logo.png",
-      },
-      {
-        url: "https://www.notion.so/",
-        logo: "https://cdn.icon-icons.com/icons2/2429/PNG/512/notion_logo_icon_147257.png",
       },
     ],
   },

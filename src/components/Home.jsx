@@ -13,8 +13,7 @@ import {
   faGmail,
   faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
-import DATA, { noOfData } from "../data/data";
-import Tile from "./Tile";
+import Tiles from "./Tiles.jsx";
 
 const Home = () => {
   const [time, setTime] = useState("");
@@ -74,10 +73,16 @@ const Home = () => {
   generateQuery();
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start text-white bg-black">
+    <div className="min-h-screen flex flex-col items-center justify-start text-white bg-black bg-opacity-60">
+      <img
+        // src={bgImage}
+        src="https://images.unsplash.com/photo-1556139930-c23fa4a4f934?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="unsplash"
+        className="w-full h-full -z-10 overflow-hidden absolute top-0 left-0 opacity-100 object-fill"
+      />
       <div className="fixed top-0 left-0 right-0 p-4 flex justify-between items-center">
         <div className="flex flex-col justify-center items-start">
-          <p className="text-5xl font-200">{time}</p>
+          {/* <p className="text-5xl font-200">{time}</p> */}
         </div>
         <div className="flex space-x-4">
           <button
@@ -195,22 +200,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex flex-row items-start justify-center  mt-32">
-        {DATA.map((items) => {
-          return (
-            <div className="flex flex-col items-center justify-start">
-              <h3 className="font-rajdhani text-lg text-center m-0 mx-auto">
-                {items.name}
-              </h3>
-              <div className="flex flex-wrap flex-row justify-between items-center mx-8 max-w-[380px]">
-                {items.data.map((item) => (
-                  <Tile icon={item.logo} link={item.url} />
-                ))}
-              </div>
-            </div>
-          );
-        })}
-      </div>
+      <Tiles />
     </div>
   );
 };
