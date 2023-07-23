@@ -13,23 +13,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-
-  /* Specify the background image to be used */
-  background: url("http://localhost:3000/background.jpg") no-repeat center
-    center fixed;
-  background-size: cover;
-
-  /* Specify the background image */
-  opacity: 0.3;
-  z-index: -1;
-}
 * {
   @apply font-rajdhani;
   @apply font-rajdhani;
