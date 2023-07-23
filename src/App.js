@@ -1,31 +1,19 @@
-import Header from "./components/Header";
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import Unsplash, { toJson } from "unsplash-js";
-import {
-  faGithub,
-  faDev,
-  faAmazon,
-  faFlipboard,
-  faMakefile,
-  faYoutube,
-  faGoogleDrive,
-  faMicrosoft,
-  faGmail,
-} from "@fortawesome/free-brands-svg-icons";
-
 function App() {
-  const [time, setTime] = useState("");
-  const [date, setDate] = useState("");
-  const [bgImage, setBgImage] = useState("");
-
-  let unsplash = createApi({
-    Fetch: fetch,
-  });
-
   return (
     <div className="App">
-      <Header />
+      <header className="App-header">
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {console.log(process.env)}
+        </a>
+      </header>
     </div>
   );
 }
