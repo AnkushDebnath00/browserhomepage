@@ -1,18 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 import axios from "axios";
-import {
-  faGithub,
-  faDev,
-  faAmazon,
-  faFlipboard,
-  faMakefile,
-  faYoutube,
-  faGoogleDrive,
-  faMicrosoft,
-  faGmail,
-  faGoogle,
-} from "@fortawesome/free-brands-svg-icons";
 import Tiles from "./Tiles.jsx";
 
 const Home = () => {
@@ -68,7 +56,6 @@ const Home = () => {
         query += words[i] + "+";
       }
     }
-    console.log(query);
   };
   generateQuery();
 

@@ -1,4 +1,4 @@
-const DATA = [
+const tilesData = [
   {
     name: "Casual",
     data: [
@@ -44,10 +44,6 @@ const DATA = [
     name: "Social",
     data: [
       {
-        url: "https://www.youtube.com/",
-        logo: "https://1.bp.blogspot.com/-NUY1O5KUEJg/XnvzvYPWhuI/AAAAAAAABKI/DFZSdjTSogkCAVVAG1YFCPW9HCR3oyqqwCLcBGAsYHQ/s1600/thinks.png",
-      },
-      {
         url: "https://www.linkedin.com/feed/",
         logo: "https://pngimg.com/uploads/linkedIn/linkedIn_PNG32.png",
       },
@@ -71,6 +67,14 @@ const DATA = [
         url: "https://www.notion.so/",
         logo: "https://cdn.icon-icons.com/icons2/2429/PNG/512/notion_logo_icon_147257.png",
       },
+      {
+        url: "https://discord.com/app",
+        logo: "https://logodownload.org/wp-content/uploads/2017/11/discord-logo-2-1.png",
+      },
+      {
+        url: "https://web.whatsapp.com/",
+        logo: "https://s3.amazonaws.com/freebiesupply/large/2x/whatsapp-logo-green.png",
+      },
     ],
   },
   {
@@ -93,10 +97,6 @@ const DATA = [
         logo: "https://d33wubrfki0l68.cloudfront.net/fbb261dfdedd32e17862eca41366ee2a17b4b4f0/7e63a/img/react-logo-white.png",
       },
       {
-        url: "http://fonts.google.com/",
-        logo: "https://logos-world.net/wp-content/uploads/2021/03/Google-Fonts-Logo.png",
-      },
-      {
         url: "https://developer.mozilla.org/en-US/",
         logo: "https://logosandtypes.com/wp-content/uploads/2022/04/mdn.png",
       },
@@ -115,5 +115,96 @@ const DATA = [
     ],
   },
 ];
-
-export default DATA;
+const iconsData1 = [
+  {
+    url: "https://mail.google.com/mail/u/0/",
+    logo: "https://logolook.net/wp-content/uploads/2021/06/Gmail-Logo.png",
+  },
+  {
+    url: "https://drive.google.com/drive/u/0/",
+    logo: "https://logodownload.org/wp-content/uploads/2020/04/google-drive-logo-0-1.png",
+  },
+  {
+    url: "https://photos.google.com/",
+    logo: "https://i1.wp.com/socialbarrel.com/wp-content/uploads/2020/07/google-photos.png?resize=800%2C800&ssl=1",
+  },
+  {
+    url: "http://meet.google.com/",
+    logo: "https://i.pinimg.com/originals/e5/88/91/e58891e1c2c6c218a90eaab287b5f267.png",
+  },
+  {
+    url: "https://maps.google.com/",
+    logo: "https://logodownload.org/wp-content/uploads/2018/01/google-maps-logo-1-1-1429x2048.png",
+  },
+  {
+    url: "https://www.youtube.com/",
+    logo: "https://1.bp.blogspot.com/-NUY1O5KUEJg/XnvzvYPWhuI/AAAAAAAABKI/DFZSdjTSogkCAVVAG1YFCPW9HCR3oyqqwCLcBGAsYHQ/s1600/thinks.png",
+  },
+  {
+    url: "http://fonts.google.com/",
+    logo: "https://logos-world.net/wp-content/uploads/2021/03/Google-Fonts-Logo.png",
+  },
+  {
+    url: "http://docs.google.com/",
+    logo: "https://storage.googleapis.com/nextivawebsites-wordpressfiles-voip/var/www/virtual/nextiva.com/voip/2021/04/Google-Docs-logo.png",
+  },
+  {
+    url: "https://forms.google.com/",
+    logo: "https://4.bp.blogspot.com/-Jj5rpvFN1Hk/XBeUQXZ4qoI/AAAAAAAAAEI/SgChbgvVd40aD1cAusVCRdoitUQQF3C-ACLcBGAs/s1600/google-forms-new-logo-1.png",
+  },
+  {
+    url: "https://sheets.google.com/",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Google_Sheets_logo_(2014-2020).svg/1498px-Google_Sheets_logo_(2014-2020).svg.png",
+  },
+  {
+    url: "https://calendar.google.com/calendar/u/0/r",
+    logo: "https://shotatlife.org/wp-content/uploads/2018/07/google-calendar-icon-png.png",
+  },
+];
+const iconsData2 = [
+  {
+    url: "https://outlook.live.com/mail/0/",
+    logo: "https://logos-world.net/wp-content/uploads/2021/02/Outlook-Logo.png",
+  },
+  {
+    url: "https://onedrive.live.com/",
+    logo: "https://th.bing.com/th/id/R.fd65f2b6b4080ad13aceedfa2b9c3bc2?rik=wUYi551I41fcFw&riu=http%3a%2f%2f1000marcas.net%2fwp-content%2fuploads%2f2020%2f10%2fOneDrive-Logo.png&ehk=wqm%2fOkxNmid%2bBsuqb1jSwJAR4miUcBjIXnGq%2fcLGo0A%3d&risl=&pid=ImgRaw&r=0",
+  },
+  {
+    url: "https://photos.google.com/",
+    logo: "https://i1.wp.com/socialbarrel.com/wp-content/uploads/2020/07/google-photos.png?resize=800%2C800&ssl=1",
+  },
+  {
+    url: "http://meet.google.com/",
+    logo: "https://i.pinimg.com/originals/e5/88/91/e58891e1c2c6c218a90eaab287b5f267.png",
+  },
+  {
+    url: "https://maps.google.com/",
+    logo: "https://logodownload.org/wp-content/uploads/2018/01/google-maps-logo-1-1-1429x2048.png",
+  },
+  {
+    url: "https://www.youtube.com/",
+    logo: "https://1.bp.blogspot.com/-NUY1O5KUEJg/XnvzvYPWhuI/AAAAAAAABKI/DFZSdjTSogkCAVVAG1YFCPW9HCR3oyqqwCLcBGAsYHQ/s1600/thinks.png",
+  },
+  {
+    url: "http://fonts.google.com/",
+    logo: "https://logos-world.net/wp-content/uploads/2021/03/Google-Fonts-Logo.png",
+  },
+  {
+    url: "http://docs.google.com/",
+    logo: "https://storage.googleapis.com/nextivawebsites-wordpressfiles-voip/var/www/virtual/nextiva.com/voip/2021/04/Google-Docs-logo.png",
+  },
+  {
+    url: "https://forms.google.com/",
+    logo: "https://4.bp.blogspot.com/-Jj5rpvFN1Hk/XBeUQXZ4qoI/AAAAAAAAAEI/SgChbgvVd40aD1cAusVCRdoitUQQF3C-ACLcBGAs/s1600/google-forms-new-logo-1.png",
+  },
+  {
+    url: "https://sheets.google.com/",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Google_Sheets_logo_(2014-2020).svg/1498px-Google_Sheets_logo_(2014-2020).svg.png",
+  },
+  {
+    url: "https://calendar.google.com/calendar/u/0/r",
+    logo: "https://shotatlife.org/wp-content/uploads/2018/07/google-calendar-icon-png.png",
+  },
+];
+export { tilesData, iconsData1, iconsData2 };

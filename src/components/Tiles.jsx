@@ -1,19 +1,28 @@
 import React from "react";
-import DATA from "../data/data";
+import { tilesData, iconsData1, iconsData2 } from "../data/data";
+import Tile from "./Tile";
+import Icon from "./Icon";
 
 const Tiles = () => {
   return (
     <>
-      <div className="flex flex-row items-start justify-center  mt-32">
-        {DATA.map((items) => {
+      <div className="flex flex-row items-center justify-center mt-32">
+        {tilesData.map((items) => {
           return (
-            <div className="flex flex-col items-center justify-start">
+            <div
+              className="flex flex-col items-center justify-start"
+              key={items.name}
+            >
               <h3 className="font-[mina] text-lg text-center m-0 mx-auto tracking-[10px] opacity-40">
                 {items.name.toUpperCase()}
               </h3>
               <div className="flex flex-wrap flex-row justify-between items-center mx-8 max-w-[380px]">
                 {items.data.map((item) => (
-                  <Tile icon={item.logo} link={item.url} />
+                  <Tile
+                    key={item.url.length * item.logo.length}
+                    icon={item.logo}
+                    link={item.url}
+                  />
                 ))}
               </div>
             </div>
@@ -21,10 +30,14 @@ const Tiles = () => {
         })}
       </div>
       <div className="flex flex-row items-start justify-center">
-        <img
-          src="https://2.bp.blogspot.com/-1h850ZEqVl4/W2u2pqoYcAI/AAAAAAAAEok/wjR1MexVrr4hB8y_s5l08jYejVphdyebACLcBGAs/s1600/DuckDuckGo.png"
-          alt=""
-        />
+        {iconsData1.map((items) => {
+          return <Icon icon={items.logo} link={items.url} />;
+        })}
+      </div>
+      <div className="flex flex-row items-start justify-center">
+        {iconsData2.map((items) => {
+          return <Icon icon={items.logo} link={items.url} />;
+        })}
       </div>
     </>
   );
